@@ -1,3 +1,11 @@
 import React from "react"
+import Layout from "../../components/layout";
+import SideNav from "../../components/sidenav";
+import MainContainer from "../../components/container";
 
-export default () => <div>Hello world!</div>
+export default () => (
+    <Layout>
+        <SideNav />
+        <MainContainer />
+    </Layout>
+)
