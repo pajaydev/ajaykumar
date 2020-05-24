@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  min-height: 100vh;
+  max-width: 66.875rem;
+  margin: auto;
+}
+
+.wrapper > * {
+  padding: 20px;
+}

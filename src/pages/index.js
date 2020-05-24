@@ -1,11 +1,12 @@
 import React from "react"
-import Layout from "../../components/layout";
-import SideNav from "../../components/sidenav";
-import MainContainer from "../../components/container";
+import Layout from "../components/layout"
+import SideBar from "../components/sidebar"
+import MainContainer from "../components/container"
+import "../styles/global.css"
 
 export default () => (
-    <Layout>
-        <SideNav />
-        <MainContainer />
-    </Layout>
+  <Layout>
+    <SideBar />
+    <MainContainer />
+  </Layout>
 )
