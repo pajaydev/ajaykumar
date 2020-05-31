@@ -3,10 +3,10 @@ import SideBar from "./sidebar.js"
 import "./layout.css"
 
 const Layout = ({ children }) => (
-  <div class="wrapper">
+  <section class="wrapper">
     <SideBar />
     <div class="container">{children}</div>
-  </div>
+  </section>
 )
 
 export default Layout

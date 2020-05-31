@@ -1,0 +1,12 @@
+.contact-links {
+    display: flex;
+    padding: 0;
+}
+
+.contact-links--twitter {
+    fill: rgb(0, 172, 237);
+}
+
+.contact-links--linkedin {
+    fill: rgb(0, 127, 177)
+}

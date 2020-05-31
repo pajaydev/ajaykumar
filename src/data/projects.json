@@ -1,0 +1,27 @@
+[
+    {
+      "title":"eBay Node.js Api", 
+      "desc": "A simple Node.js wrapper for all eBay API's",
+      "link": "https://twitter.com/pajay2507"
+    },
+    {
+        "title":"Covid-19 Dashboard - India", 
+        "desc": ":india: Real Time Visualization of India COVID-19 data based on state and district wise on daily basis.",
+        "link": "https://pajaydev.github.io/covid19-india/"
+    },
+    {
+        "title":"Lasso Analyzer", 
+        "desc": "A tool for analyzing project bundles created by Lasso. We can easily catch the large and/or duplicate modules which might be either bloating up your bundle.",
+        "link": "https://github.com/pajaydev/lasso-analyzer"
+    },
+    {
+        "title":"eBay Oauth Node.js Client", 
+        "desc": "eBay Official Node.js module to generate an OAuth token that can be used to call the eBay Developer REST APIs.",
+        "link": "https://github.com/eBay/ebay-oauth-nodejs-client"
+    },
+    {
+        "title":"Virtugo - Travel Web App", 
+        "desc": "This project is to develop a travel planner system, which describes about the climatic conditions, interesting places to visit, top hotels in the area and some additional features like travel reminders depending on the user’s destination. I have used Angular JS and Spring Boot",
+        "link": "https://github.com/pajaydev/TravelWebApplication-Virtugo"
+    }
+]

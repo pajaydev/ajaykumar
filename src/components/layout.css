@@ -10,3 +10,13 @@
 .wrapper > * {
   padding: 20px;
 }
+
+.container {
+  display: flex;
+  width: calc(66.875rem - 350px);;
+}
+
+.cards {
+  width: 100%;
+  margin: 0 2.5rem;
+}

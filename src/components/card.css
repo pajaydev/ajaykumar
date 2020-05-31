@@ -1,0 +1,16 @@
+.card {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card > * {
+    display: flex;
+}
+
+.card__title a {
+    color: #007bff;
+}
+
+.card__desc {
+    clear: both;
+}
