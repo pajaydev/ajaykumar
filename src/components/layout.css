@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   max-width: 66.875rem;
   margin: auto;
 }
@@ -19,4 +19,21 @@
 .cards {
   width: 100%;
   margin: 0 2.5rem;
+  margin-top: 2rem;
+}
+
+.cards h4 {
+  margin-bottom: 0;
+}
+
+.blog {
+  width: 100%;
+  margin: 0 2.5rem;
+  margin-top: 2rem;
+  line-height: 1.7;
+}
+
+.container a:hover {
+  text-decoration: underline;
+
 }

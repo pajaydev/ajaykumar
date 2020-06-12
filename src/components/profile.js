@@ -4,16 +4,16 @@ import "./profile.css"
 
 export default () => {
   return (
-    <div>
+    <div class="profile">
       <img src=""></img>
-      <div class="title">
+      <div class="profile__title">
         <h1>
           <Link className="title" to="/">
             Ajaykumar Prathap
           </Link>
         </h1>
       </div>
-      <div class="desc">San Jose, California</div>
+      <div class="profile__desc">San Jose, California</div>
       <nav>
         <ul>
           <li>

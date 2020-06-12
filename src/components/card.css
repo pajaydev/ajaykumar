@@ -9,8 +9,20 @@
 
 .card__title a {
     color: #007bff;
+    margin-bottom: 10px;
 }
 
 .card__desc {
     clear: both;
+    margin-bottom: 20px;
+}
+
+.card__pills span {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    font-size: .75rem;
+    font-weight: 700;
 }

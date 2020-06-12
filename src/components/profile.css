@@ -2,9 +2,13 @@ ul li {
   padding-top: 8px;
 }
 
-.title {
+.profile__title a {
   font-size: 1.5rem;
   color: #222;
+}
+
+.profile__desc {
+  padding-left: 1rem;
 }
 
 .nav-item {
