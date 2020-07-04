@@ -13,19 +13,19 @@
 
 .container {
   display: flex;
-  width: calc(66.875rem - 350px);;
+  width: calc(100% - 300px);
 }
 
 .cards {
   width: 100%;
   margin: 0 2.5rem;
-  margin-top: 2rem;
 }
 
 .cards h4 {
   margin-bottom: 0;
 }
 
+/*  CSS for blog page */
 .blog {
   width: 100%;
   margin: 0 2.5rem;
@@ -35,5 +35,78 @@
 
 .container a:hover {
   text-decoration: underline;
+
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: waving 2.5s infinite;
+}
+
+@keyframes waving {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    transform: rotate(9deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: inherit;
+  }
+
+  .blog {
+    margin: 0 1rem;
+  }
+
+  .cards {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
 
 }

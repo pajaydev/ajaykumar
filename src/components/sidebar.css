@@ -1,9 +1,14 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #eef2f4;
+  border-right: 1px solid #dddfdf;
   width: 300px;
   flex-shrink: 0;
   padding: 30px 30px 0 30px;
   justify-items: center;
+}
+
+.copywright {
+  display: flex;
+  justify-content: center;
 }

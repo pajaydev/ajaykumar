@@ -1,19 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
+import profile from "../images/profile.jpg";
 import "./profile.css"
 
 export default () => {
   return (
-    <div class="profile">
-      <img src=""></img>
-      <div class="profile__title">
+    <div className="profile">
+      <Link to="/">
+        <img id="avatar" src={profile} />
+      </Link>
+      <div className="profile__title">
         <h1>
           <Link className="title" to="/">
             Ajaykumar Prathap
           </Link>
         </h1>
       </div>
-      <div class="profile__desc">San Jose, California</div>
+      <div className="profile__desc">San Jose, California</div>
       <nav>
         <ul>
           <li>

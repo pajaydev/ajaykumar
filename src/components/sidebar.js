@@ -4,10 +4,10 @@ import Contact from "./contacts"
 import "./sidebar.css"
 
 const SideBar = () => (
-  <section class="sidebar">
+  <section className="sidebar">
     <Profile />
     <Contact />
-    <div class="copywright">© All rights reserved.</div>
+    <div className="copywright">© All rights reserved.</div>
   </section>
 )
 

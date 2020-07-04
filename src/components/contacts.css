@@ -1,6 +1,7 @@
 .contact-links {
     display: flex;
     padding: 0;
+    justify-content: center;
 }
 
 .contact-links--twitter {

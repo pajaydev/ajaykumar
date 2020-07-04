@@ -5,11 +5,11 @@ import './contacts.css';
 
 export default () => {
   return (
-    <div class="contacts">
+    <div className="contacts">
       <nav>
-        <ul class="contact-links">
+        <ul className="contact-links">
           {socialData.map((data) => {
-            return (<li class="contact-links__item"><Icon {...data} /></li>)
+            return (<li className="contact-links__item"><Icon {...data} /></li>)
           })}
         </ul>
       </nav>

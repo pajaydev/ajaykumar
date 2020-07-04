@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 *,
@@ -12,8 +12,16 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  color: #444452;
+  padding: 0;
+}
+
+ul, li {
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

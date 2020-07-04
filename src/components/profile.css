@@ -2,6 +2,18 @@ ul li {
   padding-top: 8px;
 }
 
+#avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.profile > * {
+  display: flex;
+  justify-content: center;
+}
+
 .profile__title a {
   font-size: 1.5rem;
   color: #222;

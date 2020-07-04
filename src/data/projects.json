@@ -15,7 +15,7 @@
         "title":"Lasso Analyzer", 
         "desc": "A tool for analyzing project bundles created by Lasso. We can easily catch the large and/or duplicate modules which might be either bloating up your bundle.",
         "link": "https://github.com/pajaydev/lasso-analyzer",
-        "pills": ["JavaScript", "lasso", "visualizer", "bundle-analyzer"]
+        "pills": ["JavaScript", "lasso", "visualizer", "bundle"]
     },
     {
         "title":"Ebay Oauth Node.js Client", 

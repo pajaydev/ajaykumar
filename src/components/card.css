@@ -8,8 +8,18 @@
 }
 
 .card__title a {
-    color: #007bff;
+    color: inherit;
     margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card__arrow {
+    transition: all .2s ease-in-out;
+}
+
+.card__arrow:hover:after {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px)
 }
 
 .card__desc {
