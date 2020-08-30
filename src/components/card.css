@@ -11,13 +11,17 @@
     color: inherit;
     margin-bottom: 10px;
     font-weight: 700;
+    text-decoration: none !important;
+    font-size: 1.15rem;
 }
 
-.card__arrow {
+.card__arrow img {
+    height: 16px;
+    margin-left: 10px;
     transition: all .2s ease-in-out;
 }
 
-.card__arrow:hover:after {
+.card__title a:hover img {
     -webkit-transform: translateX(7px);
     transform: translateX(7px)
 }
@@ -28,7 +32,7 @@
 }
 
 .card__pills span {
-    padding: 5px;
+    padding: 3px;
     margin-right: 10px;
     border: 1px solid #007bff;
     color: #007bff;
