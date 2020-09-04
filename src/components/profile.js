@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import profile from "../images/profile.jpg";
+import profile from "../images/profile.jpg"
 import "./profile.css"
 
 export default () => {
