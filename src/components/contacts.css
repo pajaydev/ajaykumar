@@ -1,13 +1,19 @@
 .contact-links {
-    display: flex;
-    padding: 0;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .contact-links--twitter {
-    fill: rgb(0, 172, 237);
+  fill: rgb(0, 172, 237);
 }
 
 .contact-links--linkedin {
-    fill: rgb(0, 127, 177)
+  fill: rgb(0, 127, 177);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-links {
+    margin-top: 0;
+  }
 }

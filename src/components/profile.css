@@ -15,7 +15,6 @@ ul li {
 }
 
 .profile__title a {
-  font-size: 1.5rem;
   color: #222;
 }
 
@@ -24,7 +23,7 @@ ul li {
 }
 
 .nav-item {
-  color: #999;
+  color: #6f6f6f;
 }
 
 .nav-item:hover {

@@ -31,12 +31,11 @@
   margin: 0 2.5rem;
   margin-top: 2rem;
   line-height: 1.7;
-  font-size: 1.15rem;
+  font-size: 18px;
 }
 
 .container a:hover {
   text-decoration: underline;
-
 }
 
 .wave {
@@ -109,5 +108,8 @@
 }
 
 @media screen and (max-width: 480px) {
-
+  .blog {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

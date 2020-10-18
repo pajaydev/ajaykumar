@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
@@ -18,21 +18,47 @@ body {
   background-color: #fdfdfd;
   color: #444452;
   padding: 0;
+  font-size: 17px;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 li {
   list-style: none;
 }
 
-a, a:hover {
+li,
+ul {
+  margin: 0;
+}
+
+a,
+a:hover {
   text-decoration: none;
   background-color: transparent;
 }

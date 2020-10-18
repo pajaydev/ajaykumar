@@ -1,42 +1,42 @@
 .card {
-    width: 100%;
-    margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .card > * {
-    display: flex;
+  display: flex;
 }
 
 .card__title a {
-    color: inherit;
-    margin-bottom: 10px;
-    font-weight: 700;
-    text-decoration: none !important;
-    font-size: 1.15rem;
+  color: inherit;
+  margin-bottom: 10px;
+  text-decoration: none !important;
 }
 
 .card__arrow img {
-    height: 16px;
-    margin-left: 10px;
-    transition: all .2s ease-in-out;
+  height: 16px;
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .card__title a:hover img {
-    -webkit-transform: translateX(7px);
-    transform: translateX(7px)
+  -webkit-transform: translateX(7px);
+  transform: translateX(7px);
 }
 
 .card__desc {
-    clear: both;
-    margin-bottom: 20px;
+  clear: both;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .card__pills span {
-    padding: 3px;
-    margin-right: 10px;
-    border: 1px solid #999;
-    color: #007bff;
-    border-radius: 5px;
-    font-size: .75rem;
-    font-weight: 700;
+  padding: 3px;
+  margin-right: 10px;
+  border: 1px solid #5ca9fb;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
