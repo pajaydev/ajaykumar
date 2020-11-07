@@ -24,10 +24,24 @@ ul li {
 
 .nav-item {
   color: #6f6f6f;
+  position: relative;
 }
 
-.nav-item:hover {
-  color: #666;
+.nav-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform-origin: bottom left;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-item:hover:after {
+  transform: scaleX(1);
 }
 
 .nav-active-item {

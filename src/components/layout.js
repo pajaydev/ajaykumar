@@ -20,10 +20,6 @@ const Layout = ({ children }) => (
         href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500"
         rel="stylesheet"
       ></link>
-      <link
-        href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500"
-        rel="stylesheet"
-      ></link>
     </Helmet>
     <section className="wrapper">
       <SideBar />

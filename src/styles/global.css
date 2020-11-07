@@ -62,3 +62,24 @@ a:hover {
   text-decoration: none;
   background-color: transparent;
 }
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
