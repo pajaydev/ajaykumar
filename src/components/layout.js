@@ -2,7 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery,graphql } from 'gatsby'
 import get from "lodash/get";
-import SideBar from "./sidebar.js"
+import SideBar from "./sidebar.js";
+import SEO from './Seo';
 import icon from "../images/icon.png"
 import "./layout.css"
 
@@ -23,29 +24,9 @@ const Layout = ({ children }) => {
   const keywords = get(indexData, "site.siteMetadata.keywords");
   return (
     <div>
-    <Helmet
-      title={title}
-      meta={[
-        {
-          name: "description",
-          content: desc
-        },
-        {
-          name: "keywords",
-          content:
-            keywords
-        },
-      ]}
-    >
-      <html lang="en" />
-      <link rel="icon" href={icon}></link>
-      <link
-        href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500"
-        rel="stylesheet"
-      ></link>
-    </Helmet>
+      <SEO />
     <section className="wrapper">
-      <SideBar />
+      <SideBar title={title} desc={desc} image={icon}/>
       <div className="container">{children}</div>
     </section>
   </div>
