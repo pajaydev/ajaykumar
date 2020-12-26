@@ -1,13 +1,12 @@
 ---
 path: "/blog/2020/lasso"
 date: "2020-04-22"
-title: "Analyze your bundle in Lasso-js."
+title: "How to analyze your bundle in Lasso-js."
 ---
 
-## Why this post?
-
-Creating a High-Performance Javascript app is our high priority. We need module bundler tools like Webpack, browserify, Lasso, etc. In order to achieve this, we will be using Lasso as our module bundler. If you are new to Lasso js, this post won't cover those kindly look out the documentation. 
-In most websites, these module bundlers are used to ship the code to the browsers very carefully after minification and bundling.
+- Creating a High-Performance Javascript app is our high priority. We need module bundler tools like [Webpack](https://webpack.js.org/), [rollup](https://rollupjs.org/guide/en/), [Lasso](https://github.com/lasso-js/lasso), etc to ship the code to the browsers very carefully after minification and bundling.
+- In this article, we will be using Lasso as our module bundler. [Lasso.js](https://github.com/lasso-js/lasso) is an eBay open source Node.js-style JavaScript module bundler that also provides first-level support for optimally delivering JavaScript, CSS, images and other assets to the browser. If you are new to Lasso js, this post won't cover those kindly look out the documentation.
+- In most websites, these module bundlers are used to ship the code to the browsers very carefully after minification and bundling.
 
 > If we're shipping huge bundles for our app, this is where endorsing modern bundling techniques like code-splitting, tree-shaking and Service Worker caching can really make a huge difference. That said, even a small bundle, written poorly or with poor library choices can result in the main thread being pegged for a long time in compilation or function call times - [Addy Osmani](https://twitter.com/addyosmani).
 
@@ -58,3 +57,21 @@ require('lasso').configure({
     ]
 });
 ```
+
+### Output
+
+I ran lasso-analyzer on top of (core-js)[https://github.com/zloirock/core-js] module and I can see the below output.
+
+<center>
+  <i>Results</i>
+  <img src="./bundle.png" alt="lasso bundle analyzer"/>
+</center>
+
+### Conclusion
+
+This tool helps the developers to sneak into their production bundle and analyze them. Developers can set up a budget for all these JS and CSS sizes in the page which we can use it as a base line to make sure we are not bloating our bundle.
+
+## Reference
+
+- [Cost of JavaScript](https://v8.dev/blog/cost-of-javascript-2019).
+- [How to monitor and analyze the app](https://developers.google.com/web/fundamentals/performance/webpack/monitor-and-analyze).

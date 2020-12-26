@@ -5,18 +5,30 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
   const result = await graphql(`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              path
-            }
+  {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
           }
         }
       }
     }
+  }
   `)
+
+  if (result.errors) {
+    console.log(
+      `There was an error loading Ajay's posts`,
+      result.errors
+    )
+    return
+  }
+
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
     console.log("inside create pae")
     console.log(node.frontmatter)
@@ -31,6 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
 module.exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === "MarkdownRemark") {
+    console.log("on create nordeeeeeee")
     console.log(JSON.stringify(node, undefined, 4))
     const value = createFilePath({ node, getNode })
     createNodeField({

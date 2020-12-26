@@ -24,9 +24,9 @@ const Layout = ({ children }) => {
   const keywords = get(indexData, "site.siteMetadata.keywords");
   return (
     <div>
-      <SEO />
-    <section className="wrapper">
-      <SideBar title={title} desc={desc} image={icon}/>
+      <SEO title={title} desc={desc} image={icon} keywords={keywords}/>
+      <section className="wrapper">
+      <SideBar />
       <div className="container">{children}</div>
     </section>
   </div>
