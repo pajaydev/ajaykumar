@@ -11,16 +11,20 @@ export default ({ data }) => {
     <Layout>
       <div className="blogs">
         {blogs.map(blog => {
+          console.log(blog)
           let title = get(blog, "edges[0].node.frontmatter.title")
           let date = get(blog, "edges[0].node.frontmatter.date")
           let content = get(blog, "edges[0].node.excerpt")
-          let path = `blog${get(blog, "edges[0].node.fields.slug")}`
+          console.log(`${get(blog, "edges[0].node.fields.slug")}`)
           return (
             <div className="blog">
               <time className="blog__meta">{date}</time>
-              <Link to={path}>
+              {/* <Link to={`blog${get(blog, "edges[0].node.fields.slug")}`}>
                 <h3>{title}</h3>
-              </Link>
+              </Link> */}
+              <a href={`blog${get(blog, "edges[0].node.fields.slug")}`}>
+                <h3>{title}</h3>
+              </a>
               <span>{content}</span>
             </div>
           )

@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 export default ({ title, desc, image, keywords }) => {
-  console.log("inside seo", title, desc)
   return (
     <Helmet
       title={title}
