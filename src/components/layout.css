@@ -25,15 +25,6 @@
   margin-bottom: 0;
 }
 
-/*  CSS for blog page */
-.blog {
-  width: 100%;
-  margin: 0 2.5rem;
-  margin-top: 2rem;
-  line-height: 1.7;
-  font-size: 18px;
-}
-
 .container a:hover {
   text-decoration: underline;
 }
@@ -96,10 +87,6 @@
   .sidebar {
     width: 100%;
     border-right: inherit;
-  }
-
-  .blog {
-    margin: 0 1rem;
   }
 
   .cards {

@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 export default ({ title, desc, image, keywords }) => {
-    console.log("inside seo",title, desc);
+  console.log("inside seo", title, desc)
   return (
     <Helmet
       title={title}
@@ -12,8 +12,12 @@ export default ({ title, desc, image, keywords }) => {
           content: desc,
         },
         {
+          name: "title",
+          content: title,
+        },
+        {
           name: "keywords",
-          content: keywords || '',
+          content: keywords || "",
         },
       ]}
     >

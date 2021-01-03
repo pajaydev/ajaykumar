@@ -1,9 +1,24 @@
 .blogs {
+  margin: 0 2.5rem;
+  h3 {
+    margin-top: 0px;
+  }
+  time {
+    color: #9a9a9a;
+  }
   .blog {
+    line-height: 1.7;
+    font-size: 18px;
     padding-bottom: 1.5rem;
     border-bottom: thin solid #f3f3f3;
     a {
       color: #007bff;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogs {
+    margin: 0 1rem;
   }
 }

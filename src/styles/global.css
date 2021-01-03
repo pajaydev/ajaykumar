@@ -62,6 +62,7 @@ a,
 a:hover {
   text-decoration: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
