@@ -6,16 +6,13 @@ import "../styles/blog.scss"
 
 export default ({ data }) => {
   const blogs = get(data, "allMarkdownRemark.group")
-  console.log(blogs)
   return (
     <Layout>
       <div className="blogs">
         {blogs.map(blog => {
-          console.log(blog)
           let title = get(blog, "edges[0].node.frontmatter.title")
           let date = get(blog, "edges[0].node.frontmatter.date")
           let content = get(blog, "edges[0].node.excerpt")
-          console.log(`${get(blog, "edges[0].node.fields.slug")}`)
           return (
             <div className="blog">
               <time className="blog__meta">{date}</time>

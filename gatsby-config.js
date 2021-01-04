@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Ajaykumar Prathap | Software Engineer`,
-    description: `Hi, this is Ajay. Software Engineer, Passionate about Web.`,
+    description: `Hi, this is Ajay. Software Engineer, Passionate about Web and love building things`,
     author: `@pajaydev`,
     keywords: `Software Engineer, Javascript, Web developer, Full stack developer`,
+    social: {
+      twitter: `ajaykumar__p`,
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,10 +30,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 640,
             },
           },
           `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
