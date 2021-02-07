@@ -5,24 +5,23 @@ import { graphql, Link } from "gatsby"
 import "../styles/blog.scss"
 
 export default ({ data }) => {
-  const blogs = get(data, "allMarkdownRemark.group")
+  const blogs = get(data, "allMarkdownRemark.nodes")
   return (
     <Layout>
       <div className="blogs">
         {blogs.map(blog => {
-          let title = get(blog, "edges[0].node.frontmatter.title")
-          let date = get(blog, "edges[0].node.frontmatter.date")
-          let content = get(blog, "edges[0].node.excerpt")
+          let title = get(blog, "frontmatter.title")
+          let date = get(blog, "frontmatter.date")
           return (
             <div className="blog">
               <time className="blog__meta">{date}</time>
               {/* <Link to={`blog${get(blog, "edges[0].node.fields.slug")}`}>
                 <h3>{title}</h3>
               </Link> */}
-              <a href={`blog${get(blog, "edges[0].node.fields.slug")}`}>
+              <a href={`blog${get(blog, "fields.slug")}`}>
                 <h3>{title}</h3>
               </a>
-              <span>{content}</span>
+              <span>{blog.excerpt}</span>
             </div>
           )
         })}
@@ -33,20 +32,15 @@ export default ({ data }) => {
 
 export const blogQuery = graphql`
   query blogQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
-      group(field: frontmatter___date) {
-        fieldValue
-        edges {
-          node {
-            excerpt(pruneLength: 200)
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "DD MMMM YYYY")
-              title
-            }
-          }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
         }
       }
     }

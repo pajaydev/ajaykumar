@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
-          keywords,
+          keywords
           social {
             twitter
           }
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   const social = get(indexData, "site.siteMetadata.social")
   return (
     <div>
-      <SEO title={title} desc={desc} keywords={keywords} social={social}/>
+      <SEO title={title} desc={desc} keywords={keywords} social={social} />
       <section className="wrapper">
         <SideBar />
         <div className="container">{children}</div>

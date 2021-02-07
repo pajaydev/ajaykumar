@@ -6,7 +6,7 @@ module.exports = {
     keywords: `Software Engineer, Javascript, Web developer, Full stack developer`,
     social: {
       twitter: `ajaykumar__p`,
-    }
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
