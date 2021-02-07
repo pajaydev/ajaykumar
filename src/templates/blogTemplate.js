@@ -15,19 +15,19 @@ export default blogData => {
           <Link to="/blog">👈 Back</Link>
         </div>
         <div className="blogpost">
-            <h1 className="blogpost__title">{frontmatter.title}</h1>
-            <p className="blogpost__date">
-              <span role="img" aria-label="date">
-                🕑
-              </span>
-              {frontmatter.date}
-            </p>
-            <time>{frontmatter.time}</time>
-            <div
-              className="blogpost__content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            ></div>
-          </div>
+          <h1 className="blogpost__title">{frontmatter.title}</h1>
+          <p className="blogpost__date">
+            <span role="img" aria-label="date">
+              🕑
+            </span>
+            {frontmatter.date}
+          </p>
+          <time>{frontmatter.time}</time>
+          <div
+            className="blogpost__content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
+        </div>
       </section>
     </div>
   )

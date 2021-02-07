@@ -7,16 +7,32 @@ export default ({ title, desc, keywords, social }) => {
       title={title}
       meta={[
         {
-          name: "description",
-          content: desc,
-        },
-        {
           name: "title",
           content: title,
         },
         {
+          name: "description",
+          content: desc,
+        },
+        {
           name: "keywords",
           content: keywords || "",
+        },
+        {
+          name: `og:title`,
+          content: title,
+        },
+        {
+          name: `og:description`,
+          content: desc,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: desc,
         },
         {
           name: `twitter:card`,
@@ -30,14 +46,6 @@ export default ({ title, desc, keywords, social }) => {
           name: `twitter:site`,
           content: `@ajaykumar__p`,
         },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: desc,
-        }
       ]}
     >
       <html lang="en" />
