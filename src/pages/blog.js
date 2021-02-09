@@ -31,17 +31,16 @@ export default ({ data }) => {
 }
 
 export const blogQuery = graphql`
-  query blogQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-        }
+query blogQuery {
+  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    nodes {
+      excerpt
+      fields {
+        slug
+      }
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
       }
     }
   }
