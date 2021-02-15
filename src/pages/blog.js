@@ -12,15 +12,13 @@ export default ({ data }) => {
         {blogs.map(blog => {
           let title = get(blog, "frontmatter.title")
           let date = get(blog, "frontmatter.date")
+          let path = `${get(blog, "frontmatter.path")}`
           return (
             <div className="blog">
               <time className="blog__meta">{date}</time>
-              {/* <Link to={`blog${get(blog, "edges[0].node.fields.slug")}`}>
+              <Link to={path}>
                 <h3>{title}</h3>
-              </Link> */}
-              <a href={`blog${get(blog, "fields.slug")}`}>
-                <h3>{title}</h3>
-              </a>
+              </Link>
               <span>{blog.excerpt}</span>
             </div>
           )
@@ -31,18 +29,19 @@ export default ({ data }) => {
 }
 
 export const blogQuery = graphql`
-query blogQuery {
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-    nodes {
-      excerpt
-      fields {
-        slug
-      }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
+  query blogQuery {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          path
+        }
       }
     }
   }
-}
 `

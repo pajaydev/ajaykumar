@@ -23,7 +23,7 @@ export default () => {
             <Link
               className="nav-item"
               activeClassName="nav-active-item"
-              to="/about"
+              to="/about/"
             >
               About
             </Link>
@@ -37,7 +37,7 @@ export default () => {
             <Link
               className="nav-item"
               activeClassName="nav-active-item"
-              to="/blog"
+              to="/blog/"
             >
               Blog
             </Link>
