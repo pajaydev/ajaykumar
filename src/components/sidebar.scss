@@ -6,7 +6,12 @@
   flex-shrink: 0;
   padding: 30px 30px 0 30px;
   justify-items: center;
+  li {
+    list-style: none;
+  }
 }
+
+
 
 .copywright {
   display: flex;

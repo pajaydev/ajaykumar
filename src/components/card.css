@@ -1,6 +1,6 @@
 .card {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .card > * {
@@ -9,7 +9,6 @@
 
 .card__title a {
   color: inherit;
-  margin-bottom: 10px;
   text-decoration: none !important;
 }
 

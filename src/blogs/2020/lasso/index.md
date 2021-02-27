@@ -4,8 +4,9 @@ date: "2020-04-22"
 title: "How to analyze your bundle in Lasso-js."
 ---
 
-- Creating a High-Performance Javascript app is our high priority. To accomplish this, we need module bundler tools like [Webpack](https://webpack.js.org/), [rollup](https://rollupjs.org/guide/en/), [Lasso](https://github.com/lasso-js/lasso), etc to ship the code to the browsers very carefully after minification and bundling in most of our modern front-end applications.
-- In this article, we will be using Lasso as our module bundler. [Lasso.js](https://github.com/lasso-js/lasso) is an eBay open source Node.js style JavaScript module bundler that also provides first-level support for optimally delivering JavaScript, CSS, images and other assets to the browser. If you are new to Lasso js, this post won't cover those kindly look out the [documentation](https://github.com/lasso-js/lasso).
+Creating a High-Performance Javascript app is our high priority. To accomplish this, we need module bundler tools like [Webpack](https://webpack.js.org/), [rollup](https://rollupjs.org/guide/en/), [Lasso](https://github.com/lasso-js/lasso), etc to ship the code to the browsers very carefully after minification and bundling in most of our modern front-end applications.
+
+In this article, we will be using Lasso as our module bundler. [Lasso.js](https://github.com/lasso-js/lasso) is an eBay open source Node.js style JavaScript module bundler that also provides first-level support for optimally delivering JavaScript, CSS, images and other assets to the browser. If you are new to Lasso js, this post won't cover those kindly look out the [documentation](https://github.com/lasso-js/lasso).
 
 > If we're shipping huge bundles for our app, this is where endorsing modern bundling techniques like code-splitting, tree-shaking and Service Worker caching can really make a huge difference. That said, even a small bundle, written poorly or with poor library choices can result in the main thread being pegged for a long time in compilation or function call times - [Addy Osmani](https://twitter.com/addyosmani).
 
