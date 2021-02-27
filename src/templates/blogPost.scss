@@ -6,6 +6,12 @@ blockquote {
   line-height: 1.7;
 }
 
+ul, ol {
+  list-style-position: inside;
+  margin-left: 0px;
+  padding: 0px;
+}
+
 a {
   color: #007bff;
 }

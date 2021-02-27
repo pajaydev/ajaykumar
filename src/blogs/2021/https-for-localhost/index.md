@@ -10,26 +10,26 @@ Make sure we have **_node.js_** installed in our machine. You can download it [h
 
 ## 🔧 Installation & Steps
 
-- Install [Homebrew](https://brew.sh/) (package manager for mac os)
+1. Install [Homebrew](https://brew.sh/) (package manager for mac os)
 
 ```bash
 # only for mac users
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-- Install [mkcert](https://github.com/FiloSottile/mkcert) to generate all TLS certificates.
+2. Install [mkcert](https://github.com/FiloSottile/mkcert) to generate all TLS certificates.
 
-* For mac
+**For mac**
 
 ```bash
 brew install mkcert
 brew install nss # if you use Firefox
 ```
 
-- For windows
-  Follow this [instructions](https://github.com/FiloSottile/mkcert#windows) to install the mkcert.
+**For windows** :
+Follow this [instructions](https://github.com/FiloSottile/mkcert#windows) to install the mkcert.
 
-* Generate trusted cerificate locally
+3. Generate trusted cerificate locally
 
 ```bash
 $ mkcert -install
@@ -48,14 +48,14 @@ npm init
 touch server.js
 ```
 
-4. Install express js
+5. Install express js
 
 ```bash
 npm install express
 ```
 
-5. Copy these files created in step 3 [domainname]-key.pem, [domainname].pem and paste it in this folder.
-6. Include this below code in server.js
+6. Copy these files created in step 3 [domainname]-key.pem, [domainname].pem and paste it in this folder.
+7. Include this below code in server.js
 
 ```js
 "use strict"
@@ -74,13 +74,13 @@ app.get("/", (req, res, next) => {
 https.createServer(options, app).listen(3000)
 ```
 
-7. Start the server
+8. Start the server
 
 ```bash
 node server.js
 ```
 
-8. Test the application by opening the browser and hitting the URL
+9. Test the application by opening the browser and hitting the URL
 
 ```
 https://localhost:3000/
