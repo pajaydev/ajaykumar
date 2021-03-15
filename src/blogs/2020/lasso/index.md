@@ -1,7 +1,7 @@
 ---
 path: "/blog/2020/lasso"
 date: "2020-04-22"
-title: "How to analyze your bundle in Lasso-js."
+title: "📊 How to analyze your bundle in Lasso-js."
 ---
 
 Creating a High-Performance Javascript app is our high priority. To accomplish this, we need module bundler tools like [Webpack](https://webpack.js.org/), [rollup](https://rollupjs.org/guide/en/), [Lasso](https://github.com/lasso-js/lasso), etc to ship the code to the browsers very carefully after minification and bundling in most of our modern front-end applications.

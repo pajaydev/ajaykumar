@@ -6,7 +6,7 @@ title: "Setup HTTPS for local development using node.js and express."
 
 In this article we are going to test our site locally in https using [mkcert](https://github.com/FiloSottile/mkcert) in node & express app. mkcert is a great tool to automatically generate and install SSL certificates.
 
-Make sure we have **_node.js_** installed in our machine. You can download it [here](https://nodejs.org/en/download/)
+Make sure we have <code>node.js</code> installed in our machine. You can download it [here](https://nodejs.org/en/download/)
 
 ## 🔧 Installation & Steps
 
@@ -39,7 +39,7 @@ $ mkcert [domain name]
 $ mkcert localhost
 ```
 
-Above step will generate couple of files [domainname]-key.pem, [domainname].pem.
+Above step will generate couple of files <code>[domainname]-key.pem</code>, <code>[domainname].pem</code>.
 
 4. Create an node app and create server js file.
 
@@ -54,7 +54,7 @@ touch server.js
 npm install express
 ```
 
-6. Copy these files created in step 3 [domainname]-key.pem, [domainname].pem and paste it in this folder.
+6. Copy these files created in step 3 <code>[domainname]-key.pem</code>, <code>[domainname].pem</code> and paste it in this folder.
 7. Include this below code in server.js
 
 ```js

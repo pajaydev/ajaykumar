@@ -1,19 +1,20 @@
 $grey-color: #6f6f6f;
+
 blockquote {
-  font-style: italic;
-  font-size: 19px;
-  color: $grey-color;
+  font-size: 18px;
   line-height: 1.7;
+  margin: 0 1.45rem 1.45rem;
+  background: var(--color-bg-blockquote);
+  border-left: 8px solid var(--color-primary-black);
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
 }
 
 ul, ol {
   list-style-position: inside;
   margin-left: 0px;
   padding: 0px;
-}
-
-a {
-  color: #007bff;
 }
 
 h3,
@@ -29,9 +30,25 @@ h4 {
   width: 100%;
   padding-top: 0;
   &__date {
-    color: $grey-color;
+    color: var(--color-primary-grey);
     span {
       margin-right: 2px;
     }
+  }
+  a {
+    color: var(--color-primary-link);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  li > code, p > code {
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    font-size: 90%;
+    word-wrap: break-word;
+    background: var(--color-code);
+    border-radius: 3px;
+    border: 2px solid var(--color-code-border);
+    font-family: var(--font-family);
   }
 }

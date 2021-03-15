@@ -32,8 +32,8 @@
 .card__pills span {
   padding: 3px;
   margin-right: 10px;
-  border: 1px solid #5ca9fb;
-  color: #007bff;
+  border: 1px solid var(--color-pills);
+  color: var(--color-primary-link);
   border-radius: 5px;
   font-size: 0.75rem;
   font-weight: 500;

@@ -35,7 +35,7 @@ ul li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #007bff;
+  background-color: var(--color-primary-link);
   transform-origin: bottom left;
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -45,5 +45,5 @@ ul li {
 }
 
 .nav-active-item {
-  color: #007bff;
+  color: var(--color-primary-link);
 }
