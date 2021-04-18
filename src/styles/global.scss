@@ -1,4 +1,4 @@
-@import '~prismjs/themes/prism-okaidia.css';
+@import '~prismjs/themes/prism-tomorrow.css';
 @import './common.scss';
 
 html {
@@ -82,4 +82,9 @@ a {
   h4 {
     font-size: 16px;
   }
+}
+
+pre[class*=language-] {
+  border-radius: 8px;
+  background: var(--color-bg-code);
 }
