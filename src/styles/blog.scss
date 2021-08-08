@@ -13,6 +13,9 @@
     border-bottom: thin solid #f3f3f3;
     a {
       color: #007bff;
+      & :hover {
+        text-decoration: underline;
+      }
     }
   }
 }

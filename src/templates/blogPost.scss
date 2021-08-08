@@ -1,3 +1,6 @@
+
+@import '../styles/common.scss';
+
 $grey-color: #6f6f6f;
 
 blockquote {
@@ -36,10 +39,7 @@ h4 {
     }
   }
   a {
-    color: var(--color-primary-link);
-    &:hover {
-      text-decoration: underline;
-    }
+    @include style-anchor(var(--color-primary-link))
   }
   li > code, p > code {
     padding: .2rem .5rem;

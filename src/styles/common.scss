@@ -12,5 +12,10 @@ $background-color: #fdfdfd;
     --color-primary-grey: #6f6f6f;
     --color-code: #f0f5ff;
     --color-code-border: #cbd3fb;
-    --color-bg-code: #0c0c0c;
+    --color-bg-code: #080C0E;
+  }
+
+  @mixin style-anchor($color){
+    color: $color;
+    border-bottom: 1px dashed currentColor;
   }

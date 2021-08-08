@@ -25,10 +25,6 @@
   margin-bottom: 0;
 }
 
-.container a:hover {
-  text-decoration: underline;
-}
-
 .wave {
   display: inline-block;
   transform-origin: 70% 70%;

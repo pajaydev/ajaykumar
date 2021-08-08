@@ -21,13 +21,13 @@ This tool scans the bundle and builds a visualization of what’s inside it. Thi
 
 ### Install lasso-analyzer tool
 
-```sh
+```bash
 $ npm install --save-dev lasso-analyzer
 ```
 
 To install globally
 
-```sh
+```bash
 $ npm install -g lasso-analyzer
 ```
 
@@ -42,7 +42,7 @@ $ npm install -g lasso-analyzer
 
 1. Use it as CLI using the below command
 
-```sh
+```bash
 lasso-analyzer <--bundle path--> --output <--output filename-->
 ```
 

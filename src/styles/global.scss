@@ -87,4 +87,11 @@ a {
 pre[class*=language-] {
   border-radius: 8px;
   background: var(--color-bg-code);
+  font-weight: 600;
+}
+
+p {
+  a {
+    @include style-anchor(var(--color-primary-link))
+  }
 }
