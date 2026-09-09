@@ -43,7 +43,7 @@ export async function renderMarkdown(markdown) {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkSmartypants)
-    // Posts contain raw <img>/<center>/<code> tags, so keep the HTML through.
+    // Some posts use raw HTML tags, so let those through.
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypePrettyCode, { theme: "github-light", keepBackground: false })

@@ -1,38 +1,58 @@
-[
-  {
-    "title": "Ebay Node.js Api",
-    "desc": "A simple Node.js wrapper for all eBay API's",
-    "link": "https://pajaydev.github.io/ebay-node-api/",
-    "pills": ["Node JS", "eBay API", "Sdk"]
-  },
-  {
-    "title": "Covid-19 Dashboard - India",
-    "desc": "Real Time Visualization of India's COVID-19 cases based on state and district wise on daily basis.",
-    "link": "https://pajaydev.github.io/covid19-india/",
-    "pills": ["JavaScript", "Visualization", "Covid-19"]
-  },
-  {
-    "title": "Lasso Analyzer",
-    "desc": "📊 Tool to visualize size of Lasso js output files with a treemap. We can easily catch the large and duplicate modules upfront and optimize it to reduce the bundle size.",
-    "link": "https://github.com/pajaydev/lasso-analyzer",
-    "pills": ["JavaScript", "lasso", "visualizer", "bundle"]
-  },
-  {
-    "title": "Ebay Oauth Node.js Client",
-    "desc": "eBay's Official Node.js module to generate an OAuth token that can be used to call the eBay Developer REST APIs.",
-    "link": "https://github.com/eBay/ebay-oauth-nodejs-client",
-    "pills": ["Node JS", "eBay API", "Oauth2", "Sdk"]
-  },
-  {
-    "title": "Virtugo - Travel Web App",
-    "desc": "This project is to develop a travel planner system, which describes about the climatic conditions, interesting places to visit, top hotels in the area and some additional features like travel reminders depending on the user’s destination. I have used Angular JS and Spring Boot",
-    "link": "https://github.com/pajaydev/TravelWebApplication-Virtugo",
-    "pills": ["Java", "Angular JS", "Spring Boot", "webapp"]
-  },
-  {
-    "title": "Web Performance Budget",
-    "desc": "⚡️Articles, Websites, Tools and Case Studies to implement performance budget to a website.",
-    "link": "https://github.com/pajaydev/TravelWebApplication-Virtugo",
-    "pills": ["Article", "Awesome"]
-  }
-]
+{
+  "featured": [
+    {
+      "emoji": "🛍️",
+      "title": "Ebay Node.js Api",
+      "desc": "A simple Node.js wrapper for all eBay API's",
+      "link": "https://pajaydev.github.io/ebay-node-api/",
+      "pills": ["Node JS", "eBay API", "Sdk"]
+    },
+    {
+      "emoji": "💬",
+      "title": "Kiro History",
+      "desc": "Web app to browse your Kiro conversation history.",
+      "link": "https://github.com/pajaydev/kiro-history",
+      "pills": ["TypeScript", "Kiro", "webapp"]
+    },
+    {
+      "emoji": "⚡️",
+      "title": "Web Performance Budget",
+      "desc": "Articles, websites, tools and case studies to implement a performance budget for a website.",
+      "link": "https://github.com/pajaydev/awesome-web-performance-budget",
+      "pills": ["Article", "Awesome"]
+    },
+    {
+      "emoji": "🔑",
+      "title": "Ebay Oauth Node.js Client",
+      "desc": "eBay's Official Node.js module to generate an OAuth token that can be used to call the eBay Developer REST APIs.",
+      "link": "https://github.com/eBay/ebay-oauth-nodejs-client",
+      "pills": ["Node JS", "eBay API", "Oauth2", "Sdk"]
+    }
+  ],
+  "more": [
+    {
+      "emoji": "📈",
+      "title": "Stock Assistant Agent",
+      "desc": "AI stock assistant built on Strands Agents",
+      "link": "https://github.com/pajaydev/stock-assistant-agent"
+    },
+    {
+      "emoji": "📊",
+      "title": "Lasso Analyzer",
+      "desc": "Visualize the size of Lasso js bundles with a treemap",
+      "link": "https://github.com/pajaydev/lasso-analyzer"
+    },
+    {
+      "emoji": "🦠",
+      "title": "Covid-19 Dashboard",
+      "desc": "Real time visualization of India's COVID-19 cases",
+      "link": "https://pajaydev.github.io/covid19-india/"
+    },
+    {
+      "emoji": "✈️",
+      "title": "Virtugo",
+      "desc": "Travel planner built with Angular JS and Spring Boot",
+      "link": "https://github.com/pajaydev/TravelWebApplication-Virtugo"
+    }
+  ]
+}

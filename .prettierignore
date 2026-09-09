@@ -2,5 +2,5 @@
 out
 package.json
 package-lock.json
-# Post content is authored by hand — don't let prettier reflow it.
+# Don't reflow hand-written post markdown.
 src/blogs

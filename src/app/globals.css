@@ -181,6 +181,17 @@ a {
   gap: 0.5rem;
 }
 
+/* Keep emoji from inflating the line box. */
+.card__emoji,
+.row__emoji {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.row__emoji {
+  margin-right: 0.4rem;
+}
+
 .card__title {
   font-size: 15px;
   font-weight: 500;
@@ -215,6 +226,50 @@ a {
   margin-top: 0.75rem;
   font-size: 12.5px;
   color: var(--c-faint);
+}
+
+/* Compact project rows --------------------------------------------------- */
+
+.rows {
+  margin-top: 1.25rem;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid var(--c-divider);
+}
+
+.row__name {
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--c-strong);
+  transition: color 0.15s ease;
+}
+
+.row:hover .row__name {
+  color: var(--c-heading);
+}
+
+.row__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--c-muted);
+}
+
+.row__arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--c-border-strong);
+  transition: color 0.15s ease;
+}
+
+.row:hover .row__arrow {
+  color: var(--c-strong);
 }
 
 /* Post list -------------------------------------------------------------- */
@@ -491,6 +546,22 @@ a {
 
   .intro {
     font-size: 16px;
+  }
+
+  /* Name over description, with the arrow pinned to the first line. */
+  .row {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem;
+    padding-right: 1.5rem;
+  }
+
+  .row__arrow {
+    position: absolute;
+    top: 0.625rem;
+    right: 0;
+    margin-left: 0;
   }
 }
 

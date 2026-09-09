@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Fully static HTML in `out/` — deployable to any static host.
+  // Static HTML in `out/`.
   output: "export",
-  // Emit `path/index.html` so URLs keep the trailing slash Gatsby used.
+  // Emit `path/index.html`, so the old Gatsby URLs keep working.
   trailingSlash: true,
   images: { unoptimized: true },
-  // Don't let `next dev` write its own AGENTS.md / CLAUDE.md into the repo.
+  // Don't write AGENTS.md / CLAUDE.md into the repo on dev.
   agentRules: false,
 }
 

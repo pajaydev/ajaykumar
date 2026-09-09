@@ -1,7 +1,10 @@
-export default function ProjectCard({ title, desc, link, pills }) {
+export default function ProjectCard({ emoji, title, desc, link, pills }) {
   return (
     <a className="card" href={link} target="_blank" rel="noopener noreferrer">
       <span className="card__head">
+        <span className="card__emoji" aria-hidden="true">
+          {emoji}
+        </span>
         <span className="card__title">{title}</span>
         <span className="card__arrow" aria-hidden="true">
           ↗

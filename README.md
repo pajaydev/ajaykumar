@@ -14,8 +14,13 @@ npm run dev
 
 ## Build
 
-`npm run build` writes a fully static site to `out/` — deploy that directory to
-any static host. `npm run serve` previews the build locally.
+`npm run build` writes a static site to `out/`. `npm run serve` previews that
+build locally.
+
+## Deploy
+
+Netlify builds `master` on every push and publishes `out/` — see
+`netlify.toml`.
 
 ## Writing a post
 

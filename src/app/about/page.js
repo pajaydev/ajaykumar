@@ -7,19 +7,21 @@ export default function About() {
         Hey, I&rsquo;m Ajay <span className="wave">👋</span>
       </h1>
       <p>
-        I work at <a href="https://www.ebay.com/">eBay</a> as Full Stack
-        Software Engineer. I like fixing WEB stuff and I spend most of my time
-        writing code in Java and Javascript.
+        I&rsquo;m a full-stack engineer at{" "}
+        <a href="https://aws.amazon.com/">AWS</a>. I&rsquo;m passionate about
+        building things &mdash; mostly about taking a rough idea and turning it
+        into something people actually use.
       </p>
       <p>
-        I love opensource and I build things during my free time. I am always up
-        to grab a coffee ☕️.
+        Before AWS I was at <a href="https://www.ebay.com/">eBay</a>, also as a
+        full-stack engineer. Before that I was a front-end intern at{" "}
+        <a href="https://www.geniusplaza.com/en/">Genius Plaza</a>, migrating
+        their app to React, and prior to that a software engineer at{" "}
+        <a href="https://www.infosys.com/">Infosys</a>.
       </p>
       <p>
-        I worked before at{" "}
-        <a href="https://www.geniusplaza.com/en/">Genius plaza</a> as Front-End
-        Intern to migrate the existing application to React JS. Prior to that I
-        worked in Infosys as Full-Stack Engineer.
+        I love open source and I build things in my free time. I am always up to
+        grab a coffee ☕️.
       </p>
       <p>
         I like doing outdoor activities like hiking,{" "}

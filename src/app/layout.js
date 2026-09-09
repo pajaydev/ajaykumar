@@ -6,6 +6,7 @@ const description =
   "Hi, this is Ajay. Software Engineer, Passionate about Web and love building things"
 
 export const metadata = {
+  metadataBase: new URL("https://www.ajaykumar.dev"),
   title: {
     default: "Ajaykumar Prathap | Software Engineer",
     template: "%s | Ajaykumar Prathap",
@@ -26,6 +27,8 @@ export const metadata = {
   },
   openGraph: {
     type: "website",
+    url: "/",
+    siteName: "Ajaykumar Prathap",
     title: "Ajaykumar Prathap | Software Engineer",
     description,
   },
