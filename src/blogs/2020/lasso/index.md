@@ -66,7 +66,7 @@ I ran lasso-analyzer on top of [core-js](https://github.com/zloirock/core-js) mo
 
 <center>
   <i>Results</i>
-  <img src="./bundle.png" alt="lasso bundle analyzer"/>
+  <img src="/blog/2020/lasso/bundle.png" alt="lasso bundle analyzer"/>
 </center>
 
 ### Conclusion

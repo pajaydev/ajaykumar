@@ -90,7 +90,7 @@ https://localhost:3000/
 
 <center>
   <i>Output</i>
-  <img src="./localhost.png" alt="Test localhost in https"/>
+  <img src="/blog/2021/https-for-localhost/localhost.png" alt="Test localhost in https"/>
 </center>
 
 ## 📚 Reference
