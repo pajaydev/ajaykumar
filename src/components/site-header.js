@@ -19,7 +19,7 @@ export default function SiteHeader() {
             Ajaykumar Prathap
           </Link>
           <div className="masthead__role">
-            Full Stack Engineer · San Jose, California
+            Software Engineer · San Jose, California
           </div>
         </div>
       </div>

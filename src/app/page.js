@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <p className="intro">
-        I&rsquo;m a full-stack engineer at{" "}
+        I&rsquo;m a software engineer at{" "}
         <a href="https://aws.amazon.com/">AWS</a>. I like building things that
         people actually use.
       </p>
